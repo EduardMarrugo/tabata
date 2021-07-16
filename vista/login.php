@@ -33,8 +33,8 @@
 	<button class="btn btn-lg btn-primary btn-block" type="submit">
 		<h8>Iniciar Sesión</h8>
 	</button>
-	<div style="width:300px; height:48px; margin: 10px 0;" class="g-signin2" data-onsuccess="onSignIn"></div>
-	<input type="button" class="btn btn-lg btn-secondary btn-block" onclick="location.href = 'registrar.php'" value="Registrar">	
+	<!-- <div style="width:300px; height:48px; margin: 10px 0;" class="g-signin2" data-onsuccess="onSignIn"></div> -->
+	<input type="button" class="btn btn-lg btn-secondary btn-block" onclick="location.href = 'singup.php'" value="Registrar">	
 
 </form>
 

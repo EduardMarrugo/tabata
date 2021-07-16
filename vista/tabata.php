@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if(!$_SESSION['NOMBRE_USUARIO']){
+        header("Location: ../vista/login.php");
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -23,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Cerrar Sesion</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="../controlador/accion/act_singout.php">Cerrar Sesion</a></li>
                     </ul>
                 </div>
             </div>
@@ -33,8 +42,13 @@
             <div class="container px-lg-5">
                 <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
                     <div class="m-4 m-lg-5">
-                        <h1 class="display-5 fw-bold">Just Do It!</h1>
-                        <p class="fs-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio tempora accusantium veritatis neque aliquid ipsa eum, suscipit porro ab sunt similique ullam deleniti molestias est placeat quasi ratione exercitationem! Magni?</p>
+                        <h1 class="display-5 fw-bold">Welcome <?php 
+                          
+                          echo $_SESSION['NOMBRE_USUARIO'];
+                        
+                        
+                        ?></h1>
+                        <p class="fs-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio tempora accusantium veritatis neque aliquid ipsa eum.</p>
                     </div>
                 </div>
             </div>
@@ -47,7 +61,8 @@
                     <div class="col-lg-6 col-xxl-4 mb-5">
                         <div class="card bg-light border-0 h-100">
                             <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-table"></i></div>
+                                <a href="../vista/lista_tabatas.php"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-table"></i></div></a>
+                                
                                 <h2 class="fs-4 fw-bold">Tabatas Guardadas</h2>
                                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae consequatur, nisi error doloremque sit aspernatur.</p>
                             </div>
@@ -56,7 +71,8 @@
                     <div class="col-lg-6 col-xxl-4 mb-5">
                         <div class="card bg-light border-0 h-100">
                             <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-pencil-square"></i></div>
+                            <a href="../vista/crear_tabata.php">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-pencil-square"></i></div></a>
                                 <h2 class="fs-4 fw-bold">Crear Tabata</h2>
                                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae consequatur, nisi error doloremque sit aspernatur.</p>
                             </div>

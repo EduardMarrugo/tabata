@@ -18,17 +18,26 @@
             //Si el usuario fue encontrado, se guarda su ID en una sesión con $_SESSION
             $_SESSION['ID_USUARIO'] = $user->getId();
             $_SESSION['NOMBRE_USUARIO'] = $user->getNombre();
-            
-            if($user->esAdministrador() == 1){
-                header("Location: ../../vista/administradorUsuarios.php");                
-            }else{
+
+            if(isset($_SESSION['ID_USUARIO'])){
                 header("Location: ../../vista/tabata.php");
             }
+            else{
+                header("Location: ../../vista/login.php");
+            }
+            
+            // if($user->esAdministrador() == 1){
+            //     header("Location: ../../vista/administradorUsuarios.php");                
+            // }else{
+            //     header("Location: ../../vista/tabata.php");
+            // }
 
         }else{
             //Si el usuario no existe se vuelve a mostrar el login
             header("Location: ../../vista/login.php");
         }
 
+        
 
 
+?>

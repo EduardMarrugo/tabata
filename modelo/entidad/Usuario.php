@@ -95,7 +95,7 @@ class Usuario
 
     public function setPassword($password)
     {
-        $this->correo = $correo;
+        $this->password = $password;
 
         return $this;
     }

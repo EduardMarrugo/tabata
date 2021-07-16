@@ -25,7 +25,7 @@ function mostrarTabatasGuardadas(){
         if(http.readyState == 4 && http.status == 200) {
             var tabatas = JSON.parse(this.responseText);
          
-            for(let i=0;i<tabatas.length;i++){
+            for(let i=0; i < tabatas.length; i++){
                 $( ".list-group" ).append("<a href='tabata.php?preparacion="+tabatas[i].tPreparacion+"&actividad="+tabatas[i].tActividad+"&descanso="+tabatas[i].tDescanso+"&series="+tabatas[i].numSeries+"&rondas="+tabatas[i].numRondas+"&nombre="+tabatas[i].nombre+"&idTabata="+tabatas[i].idTabata+"'"
                 + "class='mt-1 list-group-item list-group-item-action flex-column align-items-start'>"
                 +"<div class='d-flex w-100 justify-content-between'>"
