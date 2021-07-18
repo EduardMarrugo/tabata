@@ -10,12 +10,12 @@
             $stmt1 = "INSERT INTO tabata VALUES (NULL, :nombre, :tPreparacion, :tActividad, :tDescanso,:numSeries,:numRondas, :idUsuario)";
 
             $ultimoIdInsertado = $data_source->ejecutarActualizacion($stmt1, array(
-                ':nombre' => $tabata->getNombre(),
-                ':tPreparacion' => $tabata->getPreparacion(),
-                ':tActividadad' => $tabata->getActvidad(),
-                ':tDescanso' => $tabata->getDescanso(),
+                ':nombre' => $tabata->getNombreTabata(),
+                ':tPreparacion' => $tabata->getTPreparacion(),
+                ':tActividadad' => $tabata->getTActividad(),
+                ':tDescanso' => $tabata->getTDescanso(),
                 ':numSeries' => $tabata->getNumSeries(),
-                ':numRondas' => $tabata->getNumRonas(),
+                ':numRondas' => $tabata->getNumRondas(),
                 ':idUsuarios' => $tabata->getIdUsuario()
             ));
 
@@ -49,5 +49,3 @@
 
 
     }
-
-?>

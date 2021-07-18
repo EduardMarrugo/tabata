@@ -36,8 +36,3 @@
             //Si el usuario no existe se vuelve a mostrar el login
             header("Location: ../../vista/login.php");
         }
-
-        
-
-
-?>

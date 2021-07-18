@@ -33,7 +33,7 @@ class Tabata{
     }
 
     public function getTPreparacion(){
-        return $this->preparacion;
+        return $this->tPreparacion;
     }
     
      public function getTActividad(){
@@ -98,4 +98,3 @@ class Tabata{
    }
 
 }
-?>

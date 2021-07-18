@@ -21,7 +21,7 @@ class EjercicioXTabata{
 
     //METODO SETS
     public function setIdTabata($idTabata){
-        $this->idTabata = $idTabata
+        $this->idTabata = $idTabata;
         return $this;
     }
 

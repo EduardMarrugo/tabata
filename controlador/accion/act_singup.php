@@ -26,4 +26,3 @@ if($user != null){
     alert("No se pudo registrar");
     </scrip>';
 }
-?>

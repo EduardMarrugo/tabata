@@ -12,12 +12,10 @@
         $tDescanso = $_POST["tDescanso"];
         $numSeries = $_POST["numSeries"];
         $numRondas = $_POST["numRondas"];
+        $idUsuario = $_POST["idUsuario"];
 
-        $tabata = new Tabata(NULL,$nombre,$tPreparacion ,$tActividad ,$tDescanso ,$numSeries ,$numRondas);
+        $tabata = new Tabata(NULL,$nombre,$tPreparacion ,$tActividad ,$tDescanso ,$numSeries ,$numRondas,$idUsuario);
 
         $id = guardarTabata($tabata);
 
         echo json_encode($id);
-
-
-?>
