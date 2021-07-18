@@ -6,7 +6,7 @@
     require_once(__DIR__."/../mdb/mdbTabata.php");
     require_once(__DIR__."/../../modelo/entidad/Tabata.php");
 
-        $nombre = $_POST["nombre"];
+        $nombreTabata = $_POST["nombreTabata"];
         $tPreparacion = $_POST["tPrepacion"];
         $tActividad = $_POST["tActividad"];
         $tDescanso = $_POST["tDescanso"];
@@ -14,7 +14,7 @@
         $numRondas = $_POST["numRondas"];
         $idUsuario = $_SESSION["ID_USUARIO"];
 
-        $tabata = new Tabata(NULL,$nombre,$tPreparacion ,$tActividad ,$tDescanso ,$numSeries ,$numRondas,$idUsuario);
+        $tabata = new Tabata(NULL,$nombreTabata, $tPreparacion, $tActividad, $tDescanso, $numSeries, $numRondas, $idUsuario);
 
         $id = guardarTabata($tabata);
 

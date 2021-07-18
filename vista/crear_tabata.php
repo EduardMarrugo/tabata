@@ -31,17 +31,17 @@
                         <h1 class="display-5 fw-bold">Crear Tabatas</h1>
                         <form class="form-signin" method="post" action="../controlador/accion/act_guardarTabata.php">
                         
-                            <input name="nombreTabata" type="text" id="nombretabata" class="form-control" placeholder="Nombre para la tabata" autofocus>
+                            <input name="nombreTabata" type="text" id="nombreTabata" class="form-control" placeholder="Nombre para la tabata" autofocus>
 
-                            <input name="tPreparacion" type="number" id="tpreparacion" class="form-control" placeholder="Tiempo de preparacion" autofocus>
+                            <input name="tPreparacion" type="number" id="tPreparacion" class="form-control" placeholder="Tiempo de preparacion" autofocus>
                             
-                            <input name="tActividad" type="number" id="tactividad" class="form-control" placeholder="Tiempo de actividad" >
+                            <input name="tActividad" type="number" id="tActividad" class="form-control" placeholder="Tiempo de actividad" >
 
-                            <input name="tDescanso" type="number" id="tdescanso" class="form-control" placeholder="Tiempo de descanso" >
+                            <input name="tDescanso" type="number" id="tDescanso" class="form-control" placeholder="Tiempo de descanso" >
 
-                            <input name="numSeries" type="number" id="numseries" class="form-control" placeholder="Cantidad de series" >
+                            <input name="numSeries" type="number" id="numSeries" class="form-control" placeholder="Cantidad de series" >
 
-                            <input name="numRondas" type="number" id="numrondas" class="form-control" placeholder="Cantidad de rondas" >
+                            <input name="numRondas" type="number" id="numRondas" class="form-control" placeholder="Cantidad de rondas" >
 
                             <div class="checkbox mb-3">
                             </div>
