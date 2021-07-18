@@ -7,16 +7,20 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <title>Register</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/EstiloRegistrar.css">
   <!-- Core theme CSS (includes Bootstrap)-->
-  <link rel="stylesheet" href="css/styles.css">
+  
 </head>
 
-<body class="text-center" style="background-color: grey;">
+<body class="text-center" style="background-color: white; background-image: url('img/viejalogin.jpg');">
 
-  <form class="form-signin" action="../controlador/accion/act_signup.php">
-
-    <div class="mx-4 mt-5 my-5" style="border: grey solid; background-color: rgb(255, 255, 255);">
+  <form class="form-signup" method="post" action="../controlador/accion/act_signup.php">
+      <h1 class="h3 mb-3 font-weight-normal">Registrar</h1>
+    <!-- <div class="mx-4 mt-5 my-5" style="border: grey solid; background-color: rgb(255, 255, 255);">
 
       <h1 class=" my-3 font-weight-normal">Register</h1>
 
@@ -73,14 +77,44 @@
 
       </div>
       
-    </div>
-  </form>
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Programacion Web 2021</p>
-    </div>
-  </footer>
+    </div> -->
+    <label for="nombre" class="sr-only">Nombre</label>
+    <input name="nombre" type="text" id="user" class="form-control" placeholder="Nombre" autofocus>
+    
+    <label for="correo" class="sr-only">Correo</label>
+    <input name="correo" type="email" id="correo" class="form-control" placeholder="Correo" autofocus>
+    
+		<label for="password" class="sr-only">Contraseña</label>
+		<input name="password" type="password" id="password" class="form-control" placeholder="Contraseña">
 
+    <label for="telefono" class="sr-only">Telefono</label>
+    <input name="telefono" type="tel" id="telefono" class="form-control" placeholder="Telefono" autofocus>
+
+    <label for="fechaNac" class="sr-only">fecha Nacimiento</label>
+    <input name="fechaNac" type="date" id="fechaNac" class="form-control" placeholder="Fecha Nacimiento" autofocus>
+
+    <label for="sexo" class="sr-only">Sexo</label>
+    <input name="sexo" type="text" id="sexo" class="form-control" placeholder="Sexo" autofocus>
+
+    <label for="peso" class="sr-only">Peso</label>
+    <input name="peso" type="number" id="peso" class="form-control" placeholder="Peso" autofocus>
+    
+
+		<div class="checkbox mb-3">
+		</div>
+		<button class="btn btn-lg btn-primary btn-block" type="submit" >
+			<h8>Registrar</h8>
+		</button>
+		<!-- <div style="width:300px; height:48px; margin: 10px 0;" class="g-signin2" data-onsuccess="onSignIn"></div> -->
+		<input type="button" class="btn btn-lg btn-secondary btn-block" onclick="location.href = 'login.php'" value="Volver">
+  </form>
+  <script src="js/librerias/jquery-3.3.1.min.js"></script>
+	<script src="js/librerias/bootstrap.min.js"></script>
+	<script src="js/librerias/bootstrap.bundle.min.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="js/librerias/sweetalert.min.js"></script>
+	<script src="js/logica/login.js"></script>
+  <a href="https://www.freepik.es/fotos/deporte">Foto de Deporte creado por cookie_studio - www.freepik.es</a>
 </body>
 
 </html>

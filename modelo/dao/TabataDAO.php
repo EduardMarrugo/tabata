@@ -1,6 +1,6 @@
 <?php
 require_once("DataSource.php");
-require_once(__DIR__ . "../entidad/Tabata.php");
+require_once(__DIR__ . "/../entidad/Tabata.php");
 
 class TabataDAO
 {
@@ -29,7 +29,7 @@ class TabataDAO
     {
         $data_source = new DataSource();
 
-        $data_table = $data_source->ejecutarConsulta("SELECT id, nombre, tPreparacion, tActividad, tDescanso, numSeries, numRondas FROM tabata WHERE idUsuario = :idUsuario", array(':idUsuario' => $idUsuario));
+        $data_table = $data_source->ejecutarConsulta("SELECT * FROM tabata WHERE idUsuario = :idUsuario", array(':idUsuario' => $idUsuario));
 
         $tabata = null;
         $tabatas =  array();
@@ -43,7 +43,7 @@ class TabataDAO
                 $data_table[$indice]["tDescanso"],
                 $data_table[$indice]["numSeries"],
                 $data_table[$indice]["numRondas"],
-                $idUsuario
+                $data_table[$indice]["idUsuario"]
             );
             array_push($tabatas, $tabata);
         }

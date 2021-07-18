@@ -12,7 +12,7 @@
 	<meta name="google-signin-client_id" content="363480282160-60k7tnl57l0ivpu603rqbuv1i8tjrg6c.apps.googleusercontent.com">
 </head>
 
-<body class="text-center">
+<body class="text-center" style="background-image: url('img/viejalogin.jpg');">
 
 	<!-- Este es el formulario que enviará el correo y password a
   la accion act_login.php del controlador cuando se oprima el boton Iniciar Sesión -->
@@ -44,6 +44,7 @@
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<script src="js/librerias/sweetalert.min.js"></script>
 	<script src="js/logica/login.js"></script>
+	<a href="https://www.freepik.es/fotos/deporte">Foto de Deporte creado por cookie_studio - www.freepik.es</a>
 </body>
 
 </html>

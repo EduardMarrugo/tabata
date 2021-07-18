@@ -6,4 +6,4 @@
     $tabatas = verTabatasGuardadas($_SESSION['ID_USUARIO']);
             
 
-    return $tabatas;
+    echo json_encode($tabatas);

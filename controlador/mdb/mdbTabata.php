@@ -1,5 +1,5 @@
 <?php
-    require_once(__DIR__."../../modelo/dao/TabataDAO.php");
+    require_once(__DIR__."/../../modelo/dao/TabataDAO.php");
 
     function guardarTabata(Tabata $tabata){
         $dao =  new TabataDAO();

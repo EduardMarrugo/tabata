@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="../vista/tabata.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../controlador/accion/act_singout.php">Cerrar Sesion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../controlador/accion/act_signout.php">Cerrar Sesion</a></li>
                 </ul>
             </div>
         </div>
@@ -29,14 +29,14 @@
     <header class="py-5">
         <div class="container px-lg-5">
             <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+
                 <div class="m-4 m-lg-5">
                     <h1 class="display-5 fw-bold">Tabatas</h1>
-                    <ul class="list-group">
-
-                    </ul>
-
                 </div>
+                
             </div>
+            <div id="list-group">
+                </div>
         </div>
     </header>
 
@@ -44,6 +44,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="../vista/js/logica/tabatasGuardadas.js"></script>
 </body>
 
 </html>

@@ -34,7 +34,7 @@ if (!$_SESSION['NOMBRE_USUARIO']) {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../controlador/accion/act_singout.php">Cerrar Sesion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../controlador/accion/act_signout.php">Cerrar Sesion</a></li>
                 </ul>
             </div>
         </div>
