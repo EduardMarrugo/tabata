@@ -1,14 +1,14 @@
 <?php
 
 class Tabata{
-    private $idTabata;
-    private $nombreTabata;
-    private $tPreparacion;
-    private $tActividad;
-    private $tDescanso;
-    private $numSeries;
-    private $numRondas;
-    private $idUsuario;
+    public $idTabata;
+    public $nombreTabata;
+    public $tPreparacion;
+    public $tActividad;
+    public $tDescanso;
+    public $numSeries;
+    public $numRondas;
+    public $idUsuario;
 
     //Constructor
     public function __construct($idTabata, $nombreTabata, $tPreparacion, $tActividad,$tDescanso, $numSeries, $numRondas, $idUsuario){

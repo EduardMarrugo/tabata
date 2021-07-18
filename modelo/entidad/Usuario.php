@@ -7,15 +7,15 @@
 
 class Usuario
 {
-    private $id;
-    private $nombre;
-    private $correo;
-    private $password;
-    private $telefono;
-    private $fechaNac;
-    private $sexo;
-    private $pesoKg;
-    private $administrador;
+    public $id;
+    public $nombre;
+    public $correo;
+    public $password;
+    public $telefono;
+    public $fechaNac;
+    public $sexo;
+    public $pesoKg;
+    public $administrador;
     
     public function __construct($id, $nombre, $correo, $password,$telefono, $fechaNac, $sexo, $pesoKg, $administrador){
 

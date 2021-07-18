@@ -1,6 +1,6 @@
 <?php
 
-public class Ejercicio{
+class Ejercicio{
     private $idEjercicio;
     private $nombreEjercicio;
     private $descripcion;

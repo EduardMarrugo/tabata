@@ -44,12 +44,12 @@ if (!$_SESSION['NOMBRE_USUARIO']) {
         <div class="container px-lg-5">
             <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
                 <div class="m-4 m-lg-5">
-                    <h1 class="display-5 fw-bold">Welcome <?php
+                    <h1 class="display-5 fw-bold">Bienvenido <?php
 
-                                                            echo $_SESSION['NOMBRE_USUARIO'];
+                                                                echo $_SESSION['NOMBRE_USUARIO'];
 
 
-                                                            ?></h1>
+                                                                ?></h1>
                     <p class="fs-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio tempora accusantium veritatis neque aliquid ipsa eum.</p>
                 </div>
             </div>
@@ -86,7 +86,9 @@ if (!$_SESSION['NOMBRE_USUARIO']) {
                 <div class="col-lg-6 col-xxl-4 mb-5">
                     <div class="card bg-light border-0 h-100">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-bounding-box-circles"></i></i></div>
+                            <a href="../vista/ejercicios.php">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-bounding-box-circles"></i></i></div>
+                            </a>
                             <h2 class="fs-4 fw-bold">Ejercicios</h2>
                             <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae consequatur, nisi error doloremque sit aspernatur.</p>
                         </div>
@@ -95,7 +97,9 @@ if (!$_SESSION['NOMBRE_USUARIO']) {
                 <div class="col-lg-6 col-xxl-4 mb-5">
                     <div class="card bg-light border-0 h-100">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-shuffle"></i></div>
+                            <a href="../vista/tabata_aleatorio.php">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-shuffle"></i></div>
+                            </a>
                             <h2 class="fs-4 fw-bold">Tabata Aleatorio</h2>
                             <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae consequatur, nisi error doloremque sit aspernatur.</p>
                         </div>
