@@ -15,9 +15,7 @@ function mostrarTabatasGuardadas() {
     var http = new XMLHttpRequest();
     var url = '/tabata/controlador/accion/act_verTabatasGuardadas.php';
 
-
     http.open('POST', url, true);
-    console.log(http);
 
     //Send the proper header information along with the request
     http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');

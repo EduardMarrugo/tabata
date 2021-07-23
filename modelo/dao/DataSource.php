@@ -68,6 +68,7 @@ class DataSource
             $numero_filas_afectadas = $consulta->rowCount();
 
             return $this->conexion->lastInsertId();
+
             $this->conexion = null;
         } else {
             return 0;

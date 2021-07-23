@@ -24,7 +24,7 @@ class UsuarioDAO
 
         //Se llama al metodo ejecutarConsulta para devolver el usuario
         //que cumpla con el correo y contraseña recibidos del login
-        $data_table = $data_source->ejecutarConsulta("SELECT * FROM usuario WHERE correo =:correo AND password = :password", array(':correo' => $correo, ':password' => $password));
+        $data_table = $data_source->ejecutarConsulta("SELECT * FROM usuario WHERE correo = :correo AND password = :password", array(':correo' => $correo, ':password' => $password));
 
         $usuario = null;
         //Si $data_table retornó una fila, quiere decir que se encontro el usuario en la base de datos

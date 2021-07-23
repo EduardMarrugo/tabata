@@ -9,18 +9,17 @@ class TabataDAO
     {
         $data_source = new DataSource();
 
-        $stmt1 = "INSERT INTO tabata VALUES (NULL, :nombre, :tPreparacion, :tActividad, :tDescanso,:numSeries,:numRondas, :idUsuario)";
+        $stmt1 = "INSERT INTO tabata VALUES (NULL, :nombre, :tPreparacion, :tActividad, :tDescanso, :numSeries, :numRondas, :idUsuario)";
 
         $ultimoIdInsertado = $data_source->ejecutarActualizacion($stmt1, array(
             ':nombre' => $tabata->getNombreTabata(),
             ':tPreparacion' => $tabata->getTPreparacion(),
-            ':tActividadad' => $tabata->getTActividad(),
+            ':tActividad' => $tabata->getTActividad(),
             ':tDescanso' => $tabata->getTDescanso(),
             ':numSeries' => $tabata->getNumSeries(),
             ':numRondas' => $tabata->getNumRondas(),
-            ':idUsuarios' => $tabata->getIdUsuario()
+            ':idUsuario' => $tabata->getIdUsuario()
         ));
-
 
         return $ultimoIdInsertado;
     }
