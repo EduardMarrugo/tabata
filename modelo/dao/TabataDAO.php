@@ -63,7 +63,7 @@ class TabataDAO
                 ':tDescanso' => $tabata->getTDescanso(),
                 ':numSeries' => $tabata->getNumSeries(),
                 ':numRondas' => $tabata->getNumRondas(),
-                ':idUsuario' => $tabata->getIdUsuario()
+                ':idTabata' => $tabata->getIdTabata()
             )
         );
 
