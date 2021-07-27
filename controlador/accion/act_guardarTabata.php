@@ -21,4 +21,4 @@ require_once(__DIR__."/../../modelo/entidad/Tabata.php");
 
     echo json_encode($id);
 
-    header("Location: ../../vista/tabata.php");
+    header("Location: ../../vista/lista_tabatas.php");

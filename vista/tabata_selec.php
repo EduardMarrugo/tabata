@@ -29,13 +29,27 @@
     <header class="py-5">
         <div class="container px-lg-5">
             <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
-                <div class="m-4 m-lg-5">
-                    <h1 class="display-5 fw-bold">Ejercicio</h1>
-                    <ul class="list-group">
+                <div>
+                    <table class="table table-responsive">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Preparación</th>
+                                <th>Actividad</th>
+                                <th>Descanso</th>
+                                <th>Series</th>
+                                <th>Rondas</th>
+                            </tr>
+                        </thead>
 
-                    </ul>
+                        <tbody id="list-group-selec">
 
+                        </tbody>
+                    </table>
                 </div>
+                <button class="p-4 rounded-3">Iniciar</button>
+                
+                <button class="p-4 rounded-3">Pausar</button>
             </div>
         </div>
     </header>
@@ -44,6 +58,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="../vista/js/logica/verTabata.js"></script>
+    <script src="../vista/js/logica/tabata.js"></script>
 </body>
 
 </html>

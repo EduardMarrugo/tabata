@@ -37,7 +37,7 @@ let timerArea = document.querySelector('.timer'),
   botonIniciar = document.querySelector('.iniciar'),
   botonPausar = document.querySelector('.pausar'),
   botonDetener = document.querySelector('.detener'),
-  botonGuardar = document.querySelector('.guardar');
+  botonGuardar = document.querySelector('.guardar'); 
 
 let isRunning;
 let interval;

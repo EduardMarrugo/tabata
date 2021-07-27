@@ -48,4 +48,25 @@ class TabataDAO
         }
         return $tabatas;
     }
+    public function editarTabata($tabata)
+    {
+        $data_source = new DataSource();
+
+        $stmt1 = "UPDATE tabata SET nombre = :nombreTabata, tPreparacion = :tPreparacion, tActividad = :tActividad, tDescanso = :tDescanso, numSeries = :numSeries, numRondas = :numRondas WHERE id = :idTabata";
+
+        $resultado = $data_source->ejecutarActualizacion(
+            $stmt1,
+            array(
+                ':nombreTabata' => $tabata->getNombreTabata(),
+                ':tPreparacion' => $tabata->getTPreparacion(),
+                ':tActividad' => $tabata->getTActividad(),
+                ':tDescanso' => $tabata->getTDescanso(),
+                ':numSeries' => $tabata->getNumSeries(),
+                ':numRondas' => $tabata->getNumRondas(),
+                ':idUsuario' => $tabata->getIdUsuario()
+            )
+        );
+
+        return $resultado;
+    }
 }

@@ -18,3 +18,8 @@
 
         return $tabatas;
     }
+
+    function editarTabata($tabata){
+        $dao = new TabataDAO();
+        $dao->editarTabata($tabata);
+    }

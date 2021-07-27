@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/librerias/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
@@ -28,16 +29,86 @@
     <!-- Header-->
     <header class="py-5">
         <div class="container px-lg-5">
-            <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+            <!-- <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
 
                 <div class="m-4 m-lg-5">
                     <h1 class="display-5 fw-bold">Tabatas</h1>
                 </div>
-                
-            </div>
-            <div id="list-group">
+
+            </div> -->
+            <div>
+                <div>
+                    <table class="table table-responsive">
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>Nombre</th>
+                                <th>Preparación</th>
+                                <th>Actividad</th>
+                                <th>Descanso</th>
+                                <th>Series</th>
+                                <th>Rondas</th>
+                                <th>Opciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="list-group">
+
+                        </tbody>
+                    </table>
                 </div>
+            </div>
+            <!-- <div id="list-group">
+            </div> -->
         </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Editar Tabata</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-signin" method="post"
+                                action="../controlador/accion/act_editarTabatas.php">
+
+                                <input name="idTabata" type="text" id="idTabata" readonly class="form-control" autofocus>
+
+                                <input name="nombreTabata" type="text" id="nombreTabata" class="form-control mt-2"
+                                    placeholder="Nombre para la tabata" autofocus>
+
+                                <input name="tPreparacion" type="number" id="tPreparacion" class="form-control mt-2"
+                                    placeholder="Tiempo de preparacion" autofocus>
+
+                                <input name="tActividad" type="number" id="tActividad" class="form-control mt-2"
+                                    placeholder="Tiempo de actividad">
+
+                                <input name="tDescanso" type="number" id="tDescanso" class="form-control mt-2"
+                                    placeholder="Tiempo de descanso">
+
+                                <input name="numSeries" type="number" id="numSeries" class="form-control mt-2"
+                                    placeholder="Cantidad de series">
+
+                                <input name="numRondas" type="number" id="numRondas" class="form-control mt-2"
+                                    placeholder="Cantidad de rondas">
+
+                                <div class="checkbox mb-3">
+                                </div>
+
+                                <button class="btn btn-lg btn-primary" type="submit">
+                                    Guardar
+                                </button>
+                                <button type="button" class="btn btn-lg btn-secondary btn-block" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+
+
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
     </header>
 
     <!-- Bootstrap core JS-->
